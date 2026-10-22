@@ -1,0 +1,100 @@
+{
+  "report_id": "weekly_sales_20160522",
+  "structure_tests": [
+    {
+      "Test case": "Valid revised draft",
+      "Expected behavior": "Accept",
+      "Actual behavior": "Accept",
+      "Test result": "PASS"
+    },
+    {
+      "Test case": "Unknown evidence ID",
+      "Expected behavior": "Reject",
+      "Actual behavior": "Reject",
+      "Test result": "PASS"
+    },
+    {
+      "Test case": "Incorrect report period",
+      "Expected behavior": "Reject",
+      "Actual behavior": "Reject",
+      "Test result": "PASS"
+    },
+    {
+      "Test case": "Missing summary text",
+      "Expected behavior": "Reject",
+      "Actual behavior": "Reject",
+      "Test result": "PASS"
+    },
+    {
+      "Test case": "Unexpected approved status",
+      "Expected behavior": "Reject",
+      "Actual behavior": "Reject",
+      "Test result": "PASS"
+    }
+  ],
+  "actual_unit_range_tests": [
+    {
+      "Test case": "Correct range",
+      "Expected result": "PASS",
+      "Actual result": "PASS",
+      "Test result": "PASS"
+    },
+    {
+      "Test case": "Incorrect lower bound",
+      "Expected result": "FAIL",
+      "Actual result": "FAIL",
+      "Test result": "PASS"
+    },
+    {
+      "Test case": "Incorrect upper bound",
+      "Expected result": "FAIL",
+      "Actual result": "FAIL",
+      "Test result": "PASS"
+    },
+    {
+      "Test case": "Reversed bounds",
+      "Expected result": "FAIL",
+      "Actual result": "FAIL",
+      "Test result": "PASS"
+    },
+    {
+      "Test case": "Unsupported wording",
+      "Expected result": "REVIEW",
+      "Actual result": "REVIEW",
+      "Test result": "PASS"
+    }
+  ],
+  "real_error_regression": {
+    "original_draft": {
+      "result": "FAIL",
+      "reported_range": [
+        815.0,
+        836.0
+      ],
+      "evidence_range": [
+        815.0,
+        850.0
+      ]
+    },
+    "revised_draft": {
+      "result": "PASS",
+      "reported_range": [
+        815.0,
+        850.0
+      ],
+      "evidence_range": [
+        815.0,
+        850.0
+      ]
+    }
+  },
+  "scope": [
+    "Report structure, metadata and evidence ID existence.",
+    "Supported actual-unit range phrases against cited alert records."
+  ],
+  "limitations": [
+    "These tests do not measure overall LLM accuracy.",
+    "Unsupported range wording requires manual review.",
+    "Other numerical and semantic claims require separate checks."
+  ]
+}

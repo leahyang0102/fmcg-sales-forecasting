@@ -1,0 +1,21 @@
+{
+  "period_start": "2016-04-25",
+  "period_end": "2016-05-22",
+  "weeks_checked": 4,
+  "reviewed_records": 840,
+  "alerts": 92,
+  "checks": {
+    "weekly_record_coverage": "PASS",
+    "actual_units_against_sales_source": "PASS",
+    "deviation_calculations": "PASS",
+    "alert_thresholds": "PASS",
+    "alert_classifications": "PASS"
+  },
+  "scope": "Historical sales aggregation and alert-rule validation across four weeks.",
+  "limitations": [
+    "This is not a four-week evaluation of LLM-generated reports.",
+    "Alert counts do not measure model accuracy.",
+    "Historical alerts are exploratory.",
+    "Model training and tuning leakage have not been audited."
+  ]
+}

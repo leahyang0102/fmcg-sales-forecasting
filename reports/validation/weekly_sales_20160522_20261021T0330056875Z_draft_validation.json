@@ -1,0 +1,23 @@
+{
+  "report_id": "weekly_sales_20160522",
+  "draft_file": "reports/drafts/weekly_sales_20160522_20261021T0330056875Z_draft.json",
+  "checked_at_utc": "2026-10-21T03:24:26.807206+00:00",
+  "basic_validation_errors": [],
+  "numeric_screening": {
+    "numbers_checked": 21,
+    "numbers_requiring_review": 0,
+    "scope": "Rounded numeric matching against cited evidence only"
+  },
+  "error_injection_test": {
+    "original_statement_passed": true,
+    "incorrect_number_detected": true
+  },
+  "manual_review_items": [
+    "Add explicit report and comparison dates.",
+    "Label monetary values as USD.",
+    "Review evidence coverage for cross-store comparisons.",
+    "Check direction, units, period attribution and ranking claims."
+  ],
+  "semantic_validation": "pending",
+  "human_approval": "pending"
+}

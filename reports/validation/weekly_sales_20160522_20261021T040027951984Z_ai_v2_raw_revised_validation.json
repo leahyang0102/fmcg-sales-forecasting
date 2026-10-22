@@ -1,0 +1,26 @@
+{
+  "report_id": "weekly_sales_20160522",
+  "checked_at": "2026-10-21T04:02:51.832461+00:00",
+  "reviewed_draft": "weekly_sales_20160522_20261021T040027951984Z_ai_v2_raw_revised.json",
+  "basic_validation": "PASS",
+  "errors": [],
+  "original_draft_findings": [
+    {
+      "category": "incorrect_numeric_range",
+      "location": "alert_commentary[2]",
+      "original": "815 to 836 units",
+      "corrected": "815 to 850 units",
+      "detection_method": "Manual comparison with cited evidence"
+    },
+    {
+      "category": "action_data_availability",
+      "location": "proposed_actions[2]",
+      "finding": "The proposed investigation required inventory and staffing data not supplied in this project.",
+      "resolution": "Replaced with a daily actual-versus-expected unit comparison using available data."
+    }
+  ],
+  "scope": "Checks structure, required text fields, report metadata and evidence ID existence. Does not establish that every claim is supported by its cited evidence.",
+  "remaining_numerical_and_semantic_review": "Reviewed against supplied evidence in a guided review; no remaining discrepancies identified in the listed claims.",
+  "human_approval": "PENDING",
+  "review_method": "Guided comparison of narrative claims with cited evidence; not an automated semantic validation."
+}
