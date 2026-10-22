@@ -140,6 +140,10 @@ Earlier monthly comparisons showed recurring declines in Wisconsin Foods 2. This
 
 ## AI-assisted weekly reporting
 
+[View the example weekly sales report](reports/examples/weekly_sales_review_20160522.md)
+
+The report combines sales KPIs, forecasts and exploratory alerts with AI-assisted commentary and validation. It remains a draft pending human approval.
+
 The reporting extension uses an LLM API to draft a briefing from a structured evidence package. **Python calculates the metrics and renders the tables.** Narrative statements retain evidence IDs in the JSON draft; the manager-facing report uses readable labels.
 
 The example reviews **16–22 May 2016** against **9–15 May 2016**.
