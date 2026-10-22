@@ -50,6 +50,8 @@ Snowflake organises the data into raw, stage and analytics schemas. Python prepa
 
 ## Dashboard
 
+[View the Power BI Dashboard (PDF)](FMCG_Sales_Dashboard.pdf)
+
 | Page | Purpose |
 | --- | --- |
 | FMCG Sales Overview | Revenue, units, revenue per unit, store rankings and department contribution |
