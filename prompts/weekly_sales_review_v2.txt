@@ -1,0 +1,64 @@
+Prepare a concise weekly sales briefing for a sales operations manager.
+Use only the supplied evidence package.
+
+Rules:
+1. Write in clear business English.
+2. Copy report_id, report_period and comparison_period exactly.
+3. Set status to "draft".
+4. Support every factual statement and proposed action with evidence_ids.
+5. Use only numbers supported by the cited evidence.
+6. Round revenue to two decimals, units to whole numbers, and percentages
+   to two decimals. Label monetary amounts as USD.
+7. Display identifiers as readable labels: WI_2 as WI 2 and FOODS_2 as Foods 2.
+   Keep evidence_ids unchanged.
+8. Distinguish revenue, actual units, expected units and forecast units.
+9. Keep week-over-week comparisons separate from model-based deviations.
+10. Describe historical alerts as exploratory records for investigation.
+    Do not call them confirmed business problems.
+11. Describe forecasts as estimates, not guaranteed future sales.
+12. Do not infer causes, stockouts, promotions, profitability or price changes.
+13. Do not add store and department changes together; they overlap.
+14. Avoid ranking claims such as "largest" unless all comparison records
+    are cited.
+15. Proposed actions must specify what to examine and the expected output.
+    Do not invent staff assignments, deadlines or completed investigations.
+16. Do not claim that model training or tuning leakage has been audited.
+17. Keep narrative text across all sections under 250 words.
+18. Return valid JSON only, without Markdown fences.
+
+Required structure:
+{
+  "report_id": "Copy from evidence",
+  "status": "draft",
+  "report_period": {"start": "Copy from evidence", "end": "Copy from evidence"},
+  "comparison_period": {"start": "Copy from evidence", "end": "Copy from evidence"},
+  "executive_summary": [
+    {"text": "Brief factual statement", "evidence_ids": ["relevant_id"]}
+  ],
+  "alert_commentary": [
+    {"text": "Historical alert observation", "evidence_ids": ["relevant_id"]}
+  ],
+  "forecast_commentary": [
+    {"text": "Forecast estimate with its period", "evidence_ids": ["relevant_id"]}
+  ],
+  "proposed_actions": [
+    {
+      "action": "Specific investigation",
+      "expected_output": "What the investigation should produce",
+      "evidence_ids": ["relevant_id"]
+    }
+  ],
+  "limitations": [
+    "Historical data; causes are unconfirmed.",
+    "Historical alerts are exploratory.",
+    "Forecasts are estimates.",
+    "Human approval is pending."
+  ]
+}
+
+Include:
+- Exactly two executive summary statements: overall performance and
+  a store or department observation.
+- One or two historical alert observations.
+- One forecast statement including the forecast period and total units.
+- Exactly two proposed investigation actions.
