@@ -1,0 +1,483 @@
+{
+  "schema_version": "1.1",
+  "report_id": "weekly_sales_20160522",
+  "report_type": "Historical weekly sales review",
+  "report_period": {
+    "start": "2016-05-16",
+    "end": "2016-05-22"
+  },
+  "comparison_period": {
+    "start": "2016-05-09",
+    "end": "2016-05-15"
+  },
+  "source": {
+    "file": "data/processed/daily_store_dept_sales.csv",
+    "grain": "One row per date, store and department",
+    "currency": "USD"
+  },
+  "overall_metrics": [
+    {
+      "evidence_id": "overall_1",
+      "metric": "Units sold",
+      "previous_value": 225812.0,
+      "current_value": 202535.0,
+      "change": -23277.0,
+      "wow_change_pct": -10.308132428746037
+    },
+    {
+      "evidence_id": "overall_2",
+      "metric": "Sales revenue (USD)",
+      "previous_value": 613002.7100000001,
+      "current_value": 539795.1,
+      "change": -73207.6100000001,
+      "wow_change_pct": -11.942461070033458
+    },
+    {
+      "evidence_id": "overall_3",
+      "metric": "Revenue per unit (USD)",
+      "previous_value": 2.7146595840787917,
+      "current_value": 2.665194163971659,
+      "change": -0.04946542010713273,
+      "wow_change_pct": -1.8221592275231302
+    }
+  ],
+  "store_metrics": [
+    {
+      "evidence_id": "store_WI_2",
+      "store_id": "WI_2",
+      "Previous revenue": 95506.05,
+      "Current revenue": 63111.49,
+      "Revenue change": -32394.560000000005,
+      "WoW change (%)": -33.91885644940819
+    },
+    {
+      "evidence_id": "store_WI_3",
+      "store_id": "WI_3",
+      "Previous revenue": 61222.07,
+      "Current revenue": 48772.91,
+      "Revenue change": -12449.159999999996,
+      "WoW change (%)": -20.334431684521608
+    },
+    {
+      "evidence_id": "store_WI_1",
+      "store_id": "WI_1",
+      "Previous revenue": 57511.38,
+      "Current revenue": 50522.979999999996,
+      "Revenue change": -6988.4000000000015,
+      "WoW change (%)": -12.151334222896411
+    },
+    {
+      "evidence_id": "store_CA_3",
+      "store_id": "CA_3",
+      "Previous revenue": 79228.48,
+      "Current revenue": 72725.13,
+      "Revenue change": -6503.349999999991,
+      "WoW change (%)": -8.208348815981314
+    },
+    {
+      "evidence_id": "store_TX_3",
+      "store_id": "TX_3",
+      "Previous revenue": 56265.79,
+      "Current revenue": 51541.83,
+      "Revenue change": -4723.959999999999,
+      "WoW change (%)": -8.395794318359343
+    },
+    {
+      "evidence_id": "store_TX_1",
+      "store_id": "TX_1",
+      "Previous revenue": 46182.45,
+      "Current revenue": 41587.51,
+      "Revenue change": -4594.939999999995,
+      "WoW change (%)": -9.94953710771082
+    },
+    {
+      "evidence_id": "store_TX_2",
+      "store_id": "TX_2",
+      "Previous revenue": 54522.58,
+      "Current revenue": 50360.270000000004,
+      "Revenue change": -4162.309999999998,
+      "WoW change (%)": -7.634103155059789
+    },
+    {
+      "evidence_id": "store_CA_1",
+      "store_id": "CA_1",
+      "Previous revenue": 64439.94,
+      "Current revenue": 61744.97,
+      "Revenue change": -2694.970000000001,
+      "WoW change (%)": -4.182142317326802
+    },
+    {
+      "evidence_id": "store_CA_4",
+      "store_id": "CA_4",
+      "Previous revenue": 37324.84,
+      "Current revenue": 36309.37,
+      "Revenue change": -1015.4699999999939,
+      "WoW change (%)": -2.720627871412159
+    },
+    {
+      "evidence_id": "store_CA_2",
+      "store_id": "CA_2",
+      "Previous revenue": 60799.13,
+      "Current revenue": 63118.64,
+      "Revenue change": 2319.510000000002,
+      "WoW change (%)": 3.815038142815534
+    }
+  ],
+  "department_metrics": [
+    {
+      "evidence_id": "department_FOODS_2",
+      "department_id": "FOODS_2",
+      "Previous revenue": 168175.53,
+      "Current revenue": 130507.89,
+      "Revenue change": -37667.64,
+      "WoW change (%)": -22.397812571186783
+    },
+    {
+      "evidence_id": "department_FOODS_3",
+      "department_id": "FOODS_3",
+      "Previous revenue": 373318.11,
+      "Current revenue": 340031.34,
+      "Revenue change": -33286.76999999996,
+      "WoW change (%)": -8.916462691831361
+    },
+    {
+      "evidence_id": "department_FOODS_1",
+      "department_id": "FOODS_1",
+      "Previous revenue": 71509.07,
+      "Current revenue": 69255.87,
+      "Revenue change": -2253.2000000000116,
+      "WoW change (%)": -3.15092896607383
+    }
+  ],
+  "reconciliation_checks": {
+    "Current revenue: stores vs total": true,
+    "Current revenue: departments vs total": true,
+    "Previous revenue: stores vs total": true,
+    "Previous revenue: departments vs total": true
+  },
+  "limitations": [
+    "Historical dataset; this is not a live business report.",
+    "Week-over-week changes do not establish causes.",
+    "Revenue per unit reflects both prices and product mix.",
+    "Week-over-week declines are not model-based alerts.",
+    "Human review is required before approval.",
+    "Historical alerts are exploratory.",
+    "Alerts do not establish causes or confirmed business issues.",
+    "Forecasts are estimates of units sold, not revenue.",
+    "Model training and tuning leakage have not been audited here."
+  ],
+  "store_department_metrics": [
+    {
+      "evidence_id": "store_department_CA_2_FOODS_2",
+      "store_id": "CA_2",
+      "department_id": "FOODS_2",
+      "previous_revenue": 13926.69,
+      "current_revenue": 13946.0,
+      "revenue_change": 19.30999999999949,
+      "wow_change_pct": 0.13865462647620855
+    },
+    {
+      "evidence_id": "store_department_CA_2_FOODS_1",
+      "store_id": "CA_2",
+      "department_id": "FOODS_1",
+      "previous_revenue": 9970.29,
+      "current_revenue": 10715.11,
+      "revenue_change": 744.8199999999997,
+      "wow_change_pct": 7.4703945421848275
+    },
+    {
+      "evidence_id": "store_department_CA_2_FOODS_3",
+      "store_id": "CA_2",
+      "department_id": "FOODS_3",
+      "previous_revenue": 36902.15,
+      "current_revenue": 38457.53,
+      "revenue_change": 1555.3799999999974,
+      "wow_change_pct": 4.214876368992043
+    },
+    {
+      "evidence_id": "store_department_WI_2_FOODS_2",
+      "store_id": "WI_2",
+      "department_id": "FOODS_2",
+      "previous_revenue": 37462.51,
+      "current_revenue": 20808.440000000002,
+      "revenue_change": -16654.07,
+      "wow_change_pct": -44.45529677536288
+    },
+    {
+      "evidence_id": "store_department_WI_2_FOODS_3",
+      "store_id": "WI_2",
+      "department_id": "FOODS_3",
+      "previous_revenue": 48482.78,
+      "current_revenue": 34341.53,
+      "revenue_change": -14141.25,
+      "wow_change_pct": -29.167572486561212
+    },
+    {
+      "evidence_id": "store_department_WI_2_FOODS_1",
+      "store_id": "WI_2",
+      "department_id": "FOODS_1",
+      "previous_revenue": 9560.76,
+      "current_revenue": 7961.52,
+      "revenue_change": -1599.2399999999998,
+      "wow_change_pct": -16.72712211163129
+    }
+  ],
+  "model_evidence": {
+    "schema_version": "1.0",
+    "report_id": "weekly_sales_20160522",
+    "model": "Calendar + monthly patterns",
+    "sources": {
+      "alerts": "data/processed/sales_anomaly_review_monthly_patterns.csv",
+      "forecast": "data/processed/future_sales_forecast_monthly_patterns.csv"
+    },
+    "alert_summary": {
+      "evidence_id": "weekly_alert_summary",
+      "report_period": {
+        "start": "2016-05-16",
+        "end": "2016-05-22"
+      },
+      "forecast_origin": "2016-04-24",
+      "reviewed_records": 210,
+      "alert_count": 18,
+      "above_expected": 15,
+      "below_expected": 3,
+      "thresholds": {
+        "absolute_deviation_pct_at_least": 25,
+        "absolute_deviation_units_at_least": 100,
+        "operator": "AND"
+      }
+    },
+    "alert_records": [
+      {
+        "evidence_id": "alert_20160518_CA_1_FOODS_1",
+        "sales_date": "2016-05-18",
+        "store_id": "CA_1",
+        "department_id": "FOODS_1",
+        "actual_units": 397.0,
+        "expected_units": 237.87934638361108,
+        "deviation_units": 159.12065361638892,
+        "deviation_pct": 66.89132790863918,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160521_CA_2_FOODS_1",
+        "sales_date": "2016-05-21",
+        "store_id": "CA_2",
+        "department_id": "FOODS_1",
+        "actual_units": 809.0,
+        "expected_units": 580.9991786269252,
+        "deviation_units": 228.0008213730748,
+        "deviation_pct": 39.24288187668508,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160522_CA_2_FOODS_1",
+        "sales_date": "2016-05-22",
+        "store_id": "CA_2",
+        "department_id": "FOODS_1",
+        "actual_units": 735.0,
+        "expected_units": 587.6567276107507,
+        "deviation_units": 147.34327238924925,
+        "deviation_pct": 25.073017199736,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160519_CA_2_FOODS_2",
+        "sales_date": "2016-05-19",
+        "store_id": "CA_2",
+        "department_id": "FOODS_2",
+        "actual_units": 501.0,
+        "expected_units": 368.3878188096826,
+        "deviation_units": 132.61218119031736,
+        "deviation_pct": 35.99798213165885,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160522_CA_3_FOODS_1",
+        "sales_date": "2016-05-22",
+        "store_id": "CA_3",
+        "department_id": "FOODS_1",
+        "actual_units": 651.0,
+        "expected_units": 442.7270074243956,
+        "deviation_units": 208.2729925756044,
+        "deviation_pct": 47.04320926506187,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160522_CA_4_FOODS_1",
+        "sales_date": "2016-05-22",
+        "store_id": "CA_4",
+        "department_id": "FOODS_1",
+        "actual_units": 321.0,
+        "expected_units": 213.80974621131887,
+        "deviation_units": 107.19025378868112,
+        "deviation_pct": 50.1334741227089,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160522_TX_1_FOODS_1",
+        "sales_date": "2016-05-22",
+        "store_id": "TX_1",
+        "department_id": "FOODS_1",
+        "actual_units": 398.0,
+        "expected_units": 240.4197650002986,
+        "deviation_units": 157.5802349997014,
+        "deviation_pct": 65.54379378896144,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160521_TX_2_FOODS_1",
+        "sales_date": "2016-05-21",
+        "store_id": "TX_2",
+        "department_id": "FOODS_1",
+        "actual_units": 389.0,
+        "expected_units": 271.11164989395377,
+        "deviation_units": 117.88835010604625,
+        "deviation_pct": 43.48332141099752,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160516_TX_2_FOODS_2",
+        "sales_date": "2016-05-16",
+        "store_id": "TX_2",
+        "department_id": "FOODS_2",
+        "actual_units": 537.0,
+        "expected_units": 423.87788816454713,
+        "deviation_units": 113.12211183545288,
+        "deviation_pct": 26.68742932670729,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160516_TX_3_FOODS_2",
+        "sales_date": "2016-05-16",
+        "store_id": "TX_3",
+        "department_id": "FOODS_2",
+        "actual_units": 616.0,
+        "expected_units": 461.2930776095954,
+        "deviation_units": 154.7069223904046,
+        "deviation_pct": 33.53766399272464,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160519_WI_1_FOODS_1",
+        "sales_date": "2016-05-19",
+        "store_id": "WI_1",
+        "department_id": "FOODS_1",
+        "actual_units": 374.0,
+        "expected_units": 261.37799843729,
+        "deviation_units": 112.62200156271,
+        "deviation_pct": 43.08778942223416,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160516_WI_1_FOODS_3",
+        "sales_date": "2016-05-16",
+        "store_id": "WI_1",
+        "department_id": "FOODS_3",
+        "actual_units": 1686.0,
+        "expected_units": 1312.44481083674,
+        "deviation_units": 373.55518916326014,
+        "deviation_pct": 28.4625445640722,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160516_WI_2_FOODS_1",
+        "sales_date": "2016-05-16",
+        "store_id": "WI_2",
+        "department_id": "FOODS_1",
+        "actual_units": 454.0,
+        "expected_units": 333.3877615911287,
+        "deviation_units": 120.61223840887128,
+        "deviation_pct": 36.17776424462509,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160520_WI_2_FOODS_2",
+        "sales_date": "2016-05-20",
+        "store_id": "WI_2",
+        "department_id": "FOODS_2",
+        "actual_units": 815.0,
+        "expected_units": 1188.8325017175823,
+        "deviation_units": -373.83250171758255,
+        "deviation_pct": -31.445346689082168,
+        "alert_type": "Below expected"
+      },
+      {
+        "evidence_id": "alert_20160521_WI_2_FOODS_2",
+        "sales_date": "2016-05-21",
+        "store_id": "WI_2",
+        "department_id": "FOODS_2",
+        "actual_units": 850.0,
+        "expected_units": 1319.6620687358688,
+        "deviation_units": -469.6620687358688,
+        "deviation_pct": -35.58957098659111,
+        "alert_type": "Below expected"
+      },
+      {
+        "evidence_id": "alert_20160522_WI_2_FOODS_2",
+        "sales_date": "2016-05-22",
+        "store_id": "WI_2",
+        "department_id": "FOODS_2",
+        "actual_units": 836.0,
+        "expected_units": 1196.487423192057,
+        "deviation_units": -360.4874231920569,
+        "deviation_pct": -30.128810065577465,
+        "alert_type": "Below expected"
+      },
+      {
+        "evidence_id": "alert_20160519_WI_3_FOODS_1",
+        "sales_date": "2016-05-19",
+        "store_id": "WI_3",
+        "department_id": "FOODS_1",
+        "actual_units": 338.0,
+        "expected_units": 208.55422754243253,
+        "deviation_units": 129.44577245756747,
+        "deviation_pct": 62.068160393071096,
+        "alert_type": "Above expected"
+      },
+      {
+        "evidence_id": "alert_20160516_WI_3_FOODS_2",
+        "sales_date": "2016-05-16",
+        "store_id": "WI_3",
+        "department_id": "FOODS_2",
+        "actual_units": 712.0,
+        "expected_units": 492.4666148578396,
+        "deviation_units": 219.5333851421604,
+        "deviation_pct": 44.57832846304376,
+        "alert_type": "Above expected"
+      }
+    ],
+    "forecast_summary": {
+      "evidence_id": "next_week_forecast_total",
+      "forecast_origin": "2016-05-22",
+      "period_start": "2016-05-23",
+      "period_end": "2016-05-29",
+      "record_count": 210,
+      "predicted_units": 191130.7575655856
+    },
+    "department_forecasts": [
+      {
+        "evidence_id": "forecast_FOODS_1",
+        "department_id": "FOODS_1",
+        "predicted_units": 24744.298548888273
+      },
+      {
+        "evidence_id": "forecast_FOODS_2",
+        "department_id": "FOODS_2",
+        "predicted_units": 35566.9273174067
+      },
+      {
+        "evidence_id": "forecast_FOODS_3",
+        "department_id": "FOODS_3",
+        "predicted_units": 130819.53169929064
+      }
+    ],
+    "limitations": [
+      "Historical alerts are exploratory.",
+      "Alerts do not establish causes or confirmed business issues.",
+      "Forecasts are estimates of units sold, not revenue.",
+      "Model training and tuning leakage have not been audited here.",
+      "Human review is required before approval."
+    ]
+  }
+}
